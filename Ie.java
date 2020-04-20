@@ -1,15 +1,15 @@
 package Demo;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class FireFox {
+public class Ie {
 
 	public static void main(String[] args) {
-
-		// Selenium Code..
+// Selenium Code..
 		
-		//Create a Driver Object for FireFox.java Browser..
+		//Create a Driver Object for IE Browser..
 		 
 		//We will strictly implements methods of webdriver..
 		
@@ -18,23 +18,18 @@ public class FireFox {
 //		 	X driver=new X();
 		
 			//invoke .exe file it is the browser driver discussed in selenium web driver architecture
-			
-			//gecko driver download and set path
-		
-			System.setProperty("webdriver.gecko.driver", "D:\\Softwares\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+			System.setProperty("webdriver.ie.driver", "D:\\Softwares\\IEDriverServer_Win32_3.150.1\\IEDriverServer.exe");
 			
 //			Class name = X;  X is class name..
 			 
 //		 	X driver=new X();
 			
-			WebDriver driver=new FirefoxDriver();
+			WebDriver driver=new InternetExplorerDriver();
 			
-			driver.get("http://google.com");
+			driver.get("https://www.facebook.com/");
 			
 			//To get title..
 			System.out.println(driver.getTitle());
-			
-			
 			
 			
 		 
